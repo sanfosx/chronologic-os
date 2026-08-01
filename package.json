@@ -5,8 +5,20 @@
   "description": "Personal operating system for planning, productivity and AI automation.",
   "packageManager": "npm@11",
   "scripts": {
-    "dev": "echo \"Sprint 0: workspace bootstrap\"",
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:generate": "prisma generate",
+    "db:format": "prisma format",
+    "db:validate": "prisma validate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "dev": "echo \"Sprint 1: database foundation ready\"",
     "build": "echo \"Build pending\"",
     "lint": "echo \"Lint pending\""
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.14.0",
+    "prisma": "^6.14.0",
+    "tsx": "^4.20.3"
   }
 }
