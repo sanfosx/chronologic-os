@@ -1,0 +1,12 @@
+{
+  "name": "chronologic-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal operating system for planning, productivity and AI automation.",
+  "packageManager": "npm@11",
+  "scripts": {
+    "dev": "echo \"Sprint 0: workspace bootstrap\"",
+    "build": "echo \"Build pending\"",
+    "lint": "echo \"Lint pending\""
+  }
+}
